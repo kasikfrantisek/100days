@@ -47,7 +47,7 @@ function randomRed(){
         red.addEventListener('click',  changeRed);
     }
 
-    if(levelNum === 11){
+    if(levelNum >= 11){
         container.classList.add('hidden')
         stats.classList.add('hidden')
         win.removeAttribute('style')
