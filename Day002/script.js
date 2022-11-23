@@ -14,10 +14,7 @@ let time;
 
 function generateMap(num){
     container.style.gridTemplateColumns = `repeat(${num}, 1fr)`
-    container.innerHTML = '';
-    for(let i = 0; i < number*number; i++){
-        container.innerHTML += `<div></div>`
-    }
+    container.innerHTML = "<div></div>".repeat(num**2)
     randomRed();
 }
 
