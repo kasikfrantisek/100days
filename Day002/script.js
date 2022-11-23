@@ -9,7 +9,7 @@ let stats = document.querySelector('.stats');
 let gameOver = document.querySelector('.game-over');
 let timer = document.querySelector('.time-out');
 let win = document.querySelector('.win');
-
+let time;
 
 
 function generateMap(num){
@@ -54,6 +54,7 @@ function randomRed(){
         container.classList.add('hidden')
         stats.classList.add('hidden')
         win.removeAttribute('style')
+        clearInterval(time)
     }
 }
 
@@ -63,7 +64,7 @@ btn.addEventListener('click', () => {
     container.classList.remove('hidden')
     stats.classList.remove('hidden')
     generateMap(number);
-    let time = setInterval(() => {
+    time = setInterval(() => {
         timeOut();
     }, 1000)
 })
