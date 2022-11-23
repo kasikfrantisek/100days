@@ -60,3 +60,12 @@ button:hover{
     background-color: black;
     color: white;
 }
+
+@media only screen and (max-width: 700px) {
+    .container{
+        display: grid;
+        gap: 2px;
+        height: 100%;
+        width: 100%;
+    }
+  }
