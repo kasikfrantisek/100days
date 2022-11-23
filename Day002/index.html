@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>DAY002</title>
+</head>
+<body>
+    <div class="stats hidden">
+        <p class="reset" onclick="location.reload()">Reset</p>
+        <h2 class="level">LEVEL 1</h2>
+        <p class="time-out">5</p>
+    </div>
+    <div class="start modal">
+        <h2>Hey, this is little game.</h2>
+        <p>All you need to do is click on the colored squares.</p>
+        <button>Play!</button>
+    </div>
+
+    <div class="game-over modal" style="display: none;">
+        <h2>Game over, ma dud.</h2>
+        <p>Wanna try again?</p>
+        <button onclick="location.reload()">Reset</button>
+    </div>
+
+    <div class="win modal" style="display: none;">
+        <h2>You won!! Congratz!!</h2>
+        <p>Wanna try again?</p>
+        <button onclick="location.reload()">Reset</button>
+    </div>
+
+    <div class="container hidden">
+    </div>
+</body>
+</html>
